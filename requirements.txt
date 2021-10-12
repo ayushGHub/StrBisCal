@@ -59,13 +59,12 @@ pyrsistent
 python-dateutil
 pytz
 PyYAML==5.4.1
-pyzmq
-scipy
+pyzmq==22.1.0
 Send2Trash
 simplegeneric==0.8.1
 six
 tensorboard==1.14.0
-tensorflow-cpu
+tensorflow-cpu==1.14.0
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
 terminado
