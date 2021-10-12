@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'StraPre'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E884DEA98624C20BAF6C808931427C4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_66510B842E9447F69F288AE161F765D3 }}
