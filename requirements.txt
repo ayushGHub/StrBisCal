@@ -64,7 +64,7 @@ Send2Trash
 simplegeneric==0.8.1
 six
 tensorboard==1.14.0
-tensorflow-cpu==1.14.0
+tensorflow==1.14.0
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
 terminado
