@@ -1,4 +1,5 @@
 absl-py
+pywin32
 argon2-cffi
 astor
 attrs
