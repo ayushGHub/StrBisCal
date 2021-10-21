@@ -54,7 +54,6 @@ pycparser
 Pygments
 pyparsing==2.4.7
 PyQt5_sip==4.19.18
-PyQtChart==5.12
 pyreadline
 pyrsistent
 python-dateutil
