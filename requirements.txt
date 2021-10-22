@@ -2,6 +2,7 @@ absl-py
 argon2-cffi
 astor
 attrs
+libgtk2.0-dev
 backports.functools-lru-cache
 bleach
 certifi==2021.5.30
@@ -41,7 +42,7 @@ nbconvert==5.6.0
 nbformat
 numpy==1.16.2
 olefile
-opencv-python
+opencv-python-headless
 packaging
 pandas==0.25.3
 pandocfilters==1.4.2
