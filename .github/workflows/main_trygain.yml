@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://mcr.microsoft.com/
-        username: ${{ secrets.AzureAppService_ContainerUsername_91c00223fdb64887831c0b516eae2b9b }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_6bea2261e84a47cbb803939a2f83914f }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_24bf468cb5e3412a8ad6b2f7ae07257e }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_3c9458ab05534f518a8ec45c0de3f4ae }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_91c00223fdb64887831c0b516eae2b9b }}/appsvc/staticsite:${{ github.sha }}
+        tags: mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_24bf468cb5e3412a8ad6b2f7ae07257e }}/appsvc/staticsite:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'trygain'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0ceb3a074d2b45f8b6383e687ed3b91d }}
-        images: 'mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_91c00223fdb64887831c0b516eae2b9b }}/appsvc/staticsite:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bf2d2fc935c34954ad1cfc50746262c0 }}
+        images: 'mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_24bf468cb5e3412a8ad6b2f7ae07257e }}/appsvc/staticsite:${{ github.sha }}'
